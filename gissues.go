@@ -249,12 +249,3 @@ func EditIssue(owner, repo string){
 	conv, err := json.MarshalIndent(result, "", "  ")
 	fmt.Println(string(conv))
 }
-
-
-func main(){
-	EditIssue("dudd", "github-issues-tools")
-	//CreateIssue("dudd", "github-issues-tools")
-	//GetSingleIssue("dudd", "github-issues-tools", 1)
-	//SearchIssues(os.Args[1:])
-	//ListRepoIssus("dudd", "github-issues-tools")
-}
